@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.FootballTeamsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/footballteam_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9F84C5"
+        tools:listitem="@layout/team_stats_layout" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginBottom="342dp"
+        app:layout_constraintBottom_toBottomOf="@+id/footballteam_list"
+        app:layout_constraintStart_toStartOf="@+id/footballteam_list"
+        app:layout_constraintTop_toTopOf="@+id/footballteam_list"
+        app:trackColor="@color/purple_200" />
+</androidx.constraintlayout.widget.ConstraintLayout>
